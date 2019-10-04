@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+   
+    <title>guaroca</title>
+</head>
+
+<body data-spy="scroll">
+    <!-- encabezado -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">GUAROCA</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-expanded="false" aria-label="Alternar Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- menu de navegacion -->
+                <div class="collapse navbar-collapse menu" id="menuNavegacion">
+                    <ul class="navbar-nav nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#galeria" class="nav-link">galeria</a>
+                        </li>
+                        <!-- boton desplegable -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="navBarDropdown" data-toggle="dropdown">
+                                Productos
+                            </a>
+
+                            <div class="dropdown-menu" aria-labelledby="navBarDropdown">
+                                <a href="laptop.html" class="dropdown-item">Laptop</a>
+                                <a href="monitores.html" class="dropdown-item">Monitores</a>
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contacto" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+
+
+                    <form action="" class="form-inline my-2 my-lg-0">
+                        <input type="text" class="form-control mr-sm-2" type="search" placeholder="Buscar...">
+                        <button class="btn btn-warning my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main class="container">
+        <div class="row ">
+            <div class="col">
+            <div class="carousel slide" id="slideshow" data-ride="carousel">
+                    <!-- indicadores -->
+               <ol class="carousel-indicators">
+                 <li data-target="#slideshow" data-slide-to="0" active></li>
+                 <li data-target="#slideshow" data-slide-to="1"></li>
+                 <li data-target="#slideshow" data-slide-to="2"></li>
+               </ol>
+
+                        <!-- slide -->
+                        <div class="carousel-inner">
+                            <div class="img-1 carousel-item active">
+                                <img src="img/s1.jpg" class="d-block w-100" alt="smarttv">
+                            </div>
+                            <div class="img-2 carousel-item">
+                                <img src="img/s2.jpg" class="d-block w-100" alt="Mac">
+                            </div>
+                            <div class="img-3 carousel-item">
+                                <img src="img/s3.jpg" class="d-block w-100" alt="dron">
+                            </div>
+                        </div>
+
+                        <!-- controles -->
+                        <a href="#slideshow" class="carousel-control-prev anterior" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a href="#slideshow" class="carousel-control-next siguiente" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                </div>
+            </div>
+        </div>
+        <!-- galeria -->
+        <div class="row" id="galeria">
+            <div class="col-12">
+                <div class="py-4 border-bottom">
+                    <h1 class="text-center">Galeria</h1>
+                </div>
+            </div>
+        </div>
+        <!-- tarjetas -->
+        <div class="row py-4">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/1.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Iphone</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid1">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/2.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Mac</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid2">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/3.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Camara</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid3">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/4.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Apple Watch</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid4">Detalles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/5.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Teclado</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid5">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/6.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Tablet</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid6">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/7.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Laptop</h2>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid7">Detalles</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/8.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Escritorio</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                        <a href="#" class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalcompra">Comprar</a>
+                        <a href="#" class="btn btn-sm btn-secondary" data-toggle="modal" data-target="#cm-modal-grid8">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </main>
+    <!-- logos -->
+    <section class="anuncios bg-light p-5">
+        <div class="container">
+           <div class="row caracteristicas">
+               <div class="col-md-4">
+                    <i class="fas fa-laptop  mb-3"></i>
+                    <p>Lorem ipsum dolor sit amet dolor sit amet.</p>
+               </div>
+               <div class="col-md-4">
+                    <i class="fas fa-tools mb-3 mb-3"></i>
+                    <p>Lorem ipsum dolor sit amet dolor sit amet.</p>
+               </div>
+               <div class="col-md-4">
+                    <i class="fas fa-download mb-3"></i>
+                    <p>Lorem ipsum dolor sit amet dolor sit amet.</p>
+               </div>
+           </div>
+        </div>
+    </section>
+  
+       <!-- formulario -->
+       <section id="contacto" class="contacto pt-3 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                      <h2 class="text-uppercase  text-center">contacto</h2>
+                    </div>
+                </div>
+               <!-- formulario -->
+                <div class="row">
+                    <div class="col col-md-10 offset-md-1 col-lg-8 offset-lg-2 pt-2">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col.12 col-md-6">
+                                    <input type="text" class="form-control" placeholder="Nombre" required>
+                                </div>
+                                <div class="form-group col.12 col-md-6">
+                                    <input type="text" class="form-control" placeholder="Apellido" required>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <textarea name="text" class="mensaje form-control form-control-lg" placeholder="Mensaje"></textarea>
+                                    <small class="form-text text-muted">
+                                          sea claro en su mensaje
+                                      </small>
+                                </div>
+                            </div>
+    
+                            <div class="form-row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-success btn-block">Enviar</button>
+                            </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+             <!-- footer -->
+             <footer>
+               <div class="container">        
+                 <div class="row border-top py-5 ">
+                 <div class="col-md-6 col-12 flex-row">
+                     <h3 class="text-center">GUAROCA</h3>
+                     <a href="#" class="btn btn-link">Acerca de</a>
+                      <a href="#" class="btn btn-link">Terminos y Condiciones</a>
+                        <a href="#" class="btn btn-link">Ayuda</a>
+                    </div>
+                    
+                    <!-- <div class="col-md-6 copy"></div> -->
+                    <div class="col-md-6 col-12 ">
+                        <h3 class="text-center">Siguenos</h3>
+                        <div class="redes-sociales py-2 align-self-center">
+                                <a href="http://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a href="htpp://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                                <a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+                                
+                        </div>
+                    </div>
+                     <div class="col text-right">
+                         <a href="#" class="btn btn-link ir-arriba"><i class="fas fa-chevron-up"><br>subir</i></a>
+                        </div>
+                     <br>
+             </div>
+             <p class="text-center mb-0 pb-2">2019 &copy; | Pagina hecha por el Team Romero Todos los derechos reservados.</p>                   
+         </div>
+     </footer>
+        <!--Modal compra-->
+    <div class="modal fade" id="modalcompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Metodo de pago</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">tarjeta de credito</span>
+                                        </div>
+                                       
+                                        <input type="text" class="form-control" placeholder="**** **** **** ****" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">fecha de expiracion</span>
+                                        </div>                                    
+                                        <input type="text" class="form-control" placeholder="22/22" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">CVV</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="***" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                     
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+     <!-- modals del articulo 1-->
+     <div class="modal fade" id="cm-modal-grid1" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Iphone 8</h5>
+                        <button class="close" data-dismiss="modal" data-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p>
+                                            El iPhone 8 es brillante por su inteligencia y por todas las novedades que trae: un espectacular diseño de vidrio, una mejor versión de la cámara más popular del mundo, el chip más potente e inteligente usado en un smartphone hasta ahora, carga inalámbrica muy simple y experiencias de realidad aumentada como nunca has vivido antes. iPhone 8. La nueva generación de iPhone.   
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Marca: Apple</p>
+                                    <p>Sistema Operativo: IOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button class="btn btn-primary">Aceptar</button> -->
+                        <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- modals del articulo 2-->
+     <div class="modal fade" id="cm-modal-grid2" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">iMac</h5>
+                        <button class="close" data-dismiss="modal" data-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p>
+                                            La pantalla Retina, disponible en 4K o 5K, brilla con luz propia en la iMac. Con 1,000 millones de colores y 500 nits de brillo, los gráficos sobresalen por su extraordinaria definición. El texto es supernítido. Los programas más populares y las películas más taquilleras se ven como nunca. Los gráficos y los juegos tienen un nivel de detalle impresionante. En pocas palabras: es la mejor pantalla Retina creada para una Mac hasta ahora.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Marca: Apple</p>
+                                    <p>Sistema Operativo: IOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button class="btn btn-primary">Aceptar</button> -->
+                        <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- modals del articulo 3-->
+     <div class="modal fade" id="cm-modal-grid3" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Nikon Cámara Reflex D5600 conlente AF-P DX Nikkor 18-55mm f/3.5-5.6G VR</h5>
+                        <button class="close" data-dismiss="modal" data-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p>
+                                            
+    Disfrute del gran sensor CMOS en formato DX de 24.2 MP que ofrece fotos y videos de alta calidad en casi cualquier condición
+    Permanezca siempre conectado a su dispositivo inteligente con SnapBridge para transferir, compartir y controlar la cámara de manera remota a la perfección
+    La pantalla LCD táctil con ángulo variable de 3.2 pulgadas le permite deslizar, acercar, hacer zoom y hasta ajustar el enfoque con la punta de los dedos, al igual que con un teléfono inteligente
+    El avanzado sistema de enfoque automático de 39 puntos adquiere el enfoque rápidamente donde lo desea
+    El amplio rango de sensibilidad ISO 100-25,600 le permite fotografiar desde el amanecer hasta el atardecer con confianza
+
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Marca: Nikon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button class="btn btn-primary">Aceptar</button> -->
+                        <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- modals del articulo 4-->
+     <div class="modal fade" id="cm-modal-grid4" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Apple Watch Series 4 Reloj Inteligente Gris OLED GPS (satélite) </h5>
+                        <button class="close" data-dismiss="modal" data-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p>
+                                           
+    GPS solamente, serie de aluminio.
+    S4 SiP con procesador de doble núcleo de 64 bits más rápido
+    Acelerómetro y giroscopio mejorados para detección de caídas.
+    WatchOS 5
+    Almacenamiento de 16 GB, compatible con iPhone 5S y superior.
+
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Marca: Apple</p>
+                                    <p>Sistema Operativo: IOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button class="btn btn-primary">Aceptar</button> -->
+                        <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- modals del articulo 5-->
+     <div class="modal fade" id="cm-modal-grid5" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Richer-R Inalámbrica Pack de Teclado Impermeable y Ratón Ergonomía para Apple Macbook PC </h5>
+                        <button class="close" data-dismiss="modal" data-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p>
+                                            Conexión inalámbrica confiable de 2.4GHz: receptor USB plug and play para teclado y mouse sin instalación.
+                                            Teclado Scissor-Switch: le proporciona una experiencia de escritura muy cómoda y agradable.
+                                            12 teclas multimedia: lo que le permite jugar juegos, escuchar canciones, ver películas solo una tecla para controlar.
+                                            Diseño trasero totalmente impermeable: un nuevo sistema a prueba de agua para que el teclado no le tenga miedo al agua. Juega a gusto. 
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Marca: Apple</p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button class="btn btn-primary">Aceptar</button> -->
+                        <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- modals del articulo 6-->
+     <div class="modal fade" id="cm-modal-grid6" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Apple iPad Pro 12.9 256 GB - Gris Espacial</h5>
+                        <button class="close" data-dismiss="modal" data-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p>
+                                            Apple Ipad Pro ML0T2CL/A con pantalla de 12.9 pulgadas es ideal para trabajar, jugar y disfrutar de tus películas favoritas. Posee una memoria de 256 GB para que guardes todo tu contenido multimedia. Lee, diseña o juega en el lugar que desees con el iPad Pro tendrás la mejor portabilidad. Además, cuenta con Wi-Fi.
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Marca: Apple</p>
+                                    <p>Sistema Operativo: IOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button class="btn btn-primary">Aceptar</button> -->
+                        <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- modals del articulo 7-->
+     <div class="modal fade" id="cm-modal-grid7" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Apple MacBook Air Retina 13.3" Pulgadas</h5>
+                        <button class="close" data-dismiss="modal" data-label="cerrar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <p>
+                                            
+    8 GB RAM, Disco Duro Sólido 128 SSD
+    13 .3 Pulgadas Retina Display
+    Intel Core i5 Doble Núcleo 1.6 GHz 8ta Gen
+    2 Puerto USB C Thunderbolt
+
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <p>Marca: Apple</p>
+                                    <p>Sistema Operativo: IOS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <!-- <button class="btn btn-primary">Aceptar</button> -->
+                        <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- modals del articulo 8-->
+     <div class="modal fade" id="cm-modal-grid8" tabindex="-1" role="dialog" aria-labelledby="cm-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Nikon Cámara Reflex D5600 conlente AF-P DX Nikkor 18-55mm f/3.5-5.6G VR</h5>
+                                <button class="close" data-dismiss="modal" data-label="cerrar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <p>
+                                                    
+            Disfrute del gran sensor CMOS en formato DX de 24.2 MP que ofrece fotos y videos de alta calidad en casi cualquier condición
+            Permanezca siempre conectado a su dispositivo inteligente con SnapBridge para transferir, compartir y controlar la cámara de manera remota a la perfección
+            La pantalla LCD táctil con ángulo variable de 3.2 pulgadas le permite deslizar, acercar, hacer zoom y hasta ajustar el enfoque con la punta de los dedos, al igual que con un teléfono inteligente
+            El avanzado sistema de enfoque automático de 39 puntos adquiere el enfoque rápidamente donde lo desea
+            El amplio rango de sensibilidad ISO 100-25,600 le permite fotografiar desde el amanecer hasta el atardecer con confianza
+        
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <p>Marca: Nikon</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="modal-footer">
+                                <!-- <button class="btn btn-primary">Aceptar</button> -->
+                                <button class="btn btn-success" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+    <!-- libreria de bootstrap -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- efectos -->
+    <script src="js/efectoScroll.js"></script>
+    <script>
+    // funcion para deslizar 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+    
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+
+</body>
+
+</html>

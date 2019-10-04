@@ -1,0 +1,75 @@
+.anuncios{
+    width: 100%;
+}
+.anuncios .caracteristicas{
+   text-align: center;  
+}
+.anuncios .fa-laptop
+{
+font-size: 65px;
+color: #000;
+}
+.anuncios .fa-tools{
+    color: #f7d9;
+    font-size: 65px;
+}
+.anuncios .fa-download{
+    font-size: 65px;
+    color: #f019;
+}
+.anuncios p{
+    color: #000;
+}
+/* carousel */
+/* .carousel{
+    margin-top: 58px;
+} */
+/* ir arriba */
+.ir-arriba{
+    display:none;
+    font-size:40px;
+    color:black;
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:2;
+  }
+  /* controles */
+  .anterior{
+    background: rgba(76,76,76,.8);
+}
+.siguiente{
+    background: rgba(76,76,76,.8);
+  }
+  .contacto .mensaje{
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 200px;
+      max-height: 400px;
+  }
+
+  /* laptops */
+  .laptos{
+      margin-top: 56px;
+  }
+  footer{
+   background: #f2f2f2; 
+  }
+  footer .btn{
+      color: #000;
+  }
+  footer a{
+      margin-left: 50px;
+      font-size: 25px;
+      text-decoration: none;
+  }
+  footer .fa-facebook-f {
+     color: rgba(51, 64, 248, 0.933);
+}
+  footer .fa-instagram {
+     color:#f16d;
+}
+  footer .fa-youtube {
+     color:rgb(219, 30, 30);
+}
