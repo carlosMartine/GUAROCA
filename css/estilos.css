@@ -22,7 +22,7 @@ color: #000;
 }
 /* carousel */
 /* .carousel{
-    margin-top: 58px;
+    margin-top: 60px;
 } */
 /* ir arriba */
 .ir-arriba{
@@ -36,10 +36,10 @@ color: #000;
     z-index:2;
   }
   /* controles */
-  .anterior{
+  .anterior:hover{
     background: rgba(76,76,76,.8);
 }
-.siguiente{
+.siguiente:hover{
     background: rgba(76,76,76,.8);
   }
   .contacto .mensaje{
